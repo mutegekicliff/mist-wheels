@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mwGrad" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" />
+      <stop offset="0.5" stop-color="#0284C7" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="mistGlow" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Wheel Rim -->
+  <circle cx="32" cy="32" r="28" stroke="url(#mwGrad)" stroke-width="3" fill="#0B1329"/>
+  <circle cx="32" cy="32" r="23" stroke="#1E293B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- M and W Interlocked Precision Monogram -->
+  <!-- Top M -->
+  <path d="M18 36 L18 20 L26 28 L32 21 L38 28 L46 20 L46 36" 
+        stroke="url(#mistGlow)" 
+        stroke-width="3.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+        
+  <!-- Bottom W / Aero Wheel Spokes Base -->
+  <path d="M22 28 L27 44 L32 38 L37 44 L42 28" 
+        stroke="#38BDF8" 
+        stroke-width="2.6" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        opacity="0.9"/>
+        
+  <!-- Central Hub / Precision Point -->
+  <circle cx="32" cy="32" r="2.5" fill="#E0F2FE"/>
+</svg>
