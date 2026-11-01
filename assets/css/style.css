@@ -166,33 +166,6 @@ img {
   }
 }
 
-/* Top Notification Bar */
-.top-bar {
-  background-color: #f1f5f9;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.8rem;
-  padding-block: 0.5rem;
-  color: var(--text-secondary);
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .top-bar {
-    display: block;
-  }
-  .top-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.top-bar-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
 .text-accent {
   color: var(--mist-blue);
 }
