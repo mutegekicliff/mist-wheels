@@ -1,10 +1,18 @@
-# Mist Wheels — Mobile Vehicle Cleaning & Detailing
+# Mist Wheels — Mobile Waterless Car Wash
 
-A clean, polished, mobile-first **HTML5** website for **Mist Wheels**, a mobile vehicle-cleaning and detailing service operating across Kampala and Greater Kampala, Uganda.
+A clean, polished, mobile-first **HTML5** website for **Mist Wheels**, Uganda's premier mobile waterless vehicle-cleaning service operating across Kampala and Greater Kampala.
 
 Built purely with **HTML5, CSS3, and Vanilla JavaScript** — zero build tools, zero npm packages, and zero server dependencies required.
 
-Designed in an executive **Automotive Light Theme** featuring authentic vehicle steam-cleaning, interior extraction, and commercial mobile equipment photography extracted from the supplied equipment catalogue.
+---
+
+## 💡 Core Value Proposition & Selling Points
+
+1. **100% Waterless Car Washing**: Advanced polymer encapsulation technology lifts road dust, traffic film, and grime safely away from paintwork without scratching and without a single drop of running water poured on the car.
+2. **The Washing Bay That Comes To You**: Customers never waste time sitting in traffic or queuing at traditional washing bays. Our technicians wheel the service directly to wherever the vehicle is parked.
+3. **No Plumbing & No Water Needed**: We require zero water connections, zero hosepipes, and zero taps from customer premises.
+4. **Zero Drainage & Zero Compound Mess**: Completely dry ground operation. No soapy mud pools, muddy run-off, or stained paving tiles. Safe and 100% permitted in apartment basements, corporate parking structures, and paved residential driveways.
+5. **No Fixed Structures**: No permanent concrete bays or ramps. The entire operation is carried on an agile, self-contained mobile trolley wheeled directly between parked cars.
 
 ---
 
@@ -12,11 +20,11 @@ Designed in an executive **Automotive Light Theme** featuring authentic vehicle 
 
 ```text
 Mist Wheels/
-├── index.html           # Home page (Hero, Services summary, How it works, Kampala areas)
-├── services.html        # Detailed Services catalogue (Maintenance Wash, Interior Steam, Full Detail)
-├── fleet.html           # Scheduled Fleet & Business cleaning contracts with equipment showcase
-├── about.html           # Ethos, mobile convenience, low-moisture technology, and quality standards
-├── faqs.html            # Frequently Asked Questions (space, power, drying time, rain, payments)
+├── index.html           # Home page (Hero, Advantages, Services summary, Traditional Bay comparison table, Kampala coverage)
+├── services.html        # Detailed Waterless Services catalogue (Exterior Clean, Interior Deep Care, Full Revival)
+├── fleet.html           # Scheduled Corporate & Fleet waterless contracts with equipment showcase
+├── about.html           # Ethos, the waterless revolution, mobile trolley innovation, and standards
+├── faqs.html            # FAQs (How waterless works, paint safety, zero plumbing/drainage, basement suitability)
 ├── contact.html         # Interactive booking form with full validation and WhatsApp dispatch
 ├── assets/
 │   ├── css/
@@ -28,15 +36,14 @@ Mist Wheels/
 │       ├── logo.svg     # High-contrast light theme logo (charcoal & mist-blue wordmark + alloy mark)
 │       ├── logo-dark.svg# Inverted white logo for dark anchoring footer
 │       ├── favicon.svg  # Crisp SVG browser favicon
-│       └── showcase/    # Real vehicle steam cleaning & detailing equipment photography
-│           ├── hero-steam-wash.jpg           # Mobile steam wash in action on sports car
-│           ├── detailing-action.jpg          # Vehicle steam detailing in studio bay
-│           ├── van-fleet-setup.jpg           # Self-contained van slider setup for corporate fleets
-│           ├── fleet-van-slider.jpg          # Commercial van slide-out drawer mechanism
-│           ├── interior-extraction-machine.jpg # Commercial steam & soil extraction unit
-│           ├── wheel-rim-steam.jpg           # High-pressure steam cleaning alloy wheel & rim
-│           ├── heavy-duty-steam-cleaner.jpg  # Industrial mobile steam generator
-│           └── compact-steam-extractor.jpg   # Compact upholstery extraction machine
+│       └── showcase/    # Real vehicle cleaning & mobile equipment photography
+│           ├── mobile-trolley-system.jpg       # Agile mobile trolley unit on wheels
+│           ├── portable-trolley-kit.jpg        # Self-contained mobile car care kit
+│           ├── hero-steam-wash.jpg             # Waterless exterior cleaning in action
+│           ├── detailing-action.jpg            # Paint revival and vehicle care
+│           ├── van-fleet-setup.jpg             # Mobile van dispatch setup for corporate fleets
+│           ├── interior-extraction-machine.jpg # Commercial interior soil extraction unit
+│           └── wheel-rim-steam.jpg             # Precision wheel & rim waterless degrease
 └── README.md            # Documentation & configuration guide
 ```
 
@@ -53,15 +60,7 @@ Because this is a standard HTML5 website, you can view it immediately without in
    python3 -m http.server 8000
    ```
    Then open `http://localhost:8000/`.
-3. **Web Hosting**: Upload all files directly to any static host (cPanel, Apache, Nginx, GitHub Pages, Netlify, Cloudflare Pages, Firebase Hosting).
-
----
-
-## 🎨 Theme & Real Photography
-
-- **Light Theme**: Built around pure white (`#ffffff`) surfaces, subtle slate canvases (`#f8fafc`), crisp borders (`#e2e8f0`), deep charcoal headings (`#0f172a`), rich mist-blue accents (`#0284c7`), and WhatsApp emerald (`#16a34a`).
-- **Real Equipment Photography**: Includes genuine mobile steam-cleaning and extraction photography from the Fortador catalogue, accurately showcasing the thermal vapour process without making unverified dealer or sanitisation claims.
-- **Dual-Mode Logos**: Primary light theme header logo (`logo.svg`) and executive dark footer logo (`logo-dark.svg`).
+3. **Web Hosting**: Upload all files directly to any static host (GitHub Pages, Netlify, Cloudflare Pages, cPanel, Firebase Hosting).
 
 ---
 
@@ -86,11 +85,9 @@ contact: {
 }
 ```
 
-*Note: If `whatsappNumber` is left blank, the website gracefully provides a copyable message with a settings helper so visitors never encounter broken links.*
-
 ### 2. Changing the Draft Tagline
 ```javascript
-tagline: "Expert car care, wherever you park",
+tagline: "Mobile Waterless Car Wash — The washing bay that comes to you",
 ```
 
 ### 3. Adding More Kampala Suburbs
@@ -99,7 +96,7 @@ Simply add strings to the `serviceZones` array in `assets/js/config.js`. They au
 ---
 
 ## 🔒 Compliance & Integrity
-- **British English**: Consistent spelling throughout (*programme, honour, colour, specialised, neighbourhood*).
+- **British English**: Consistent spelling throughout (*programme, honour, colour, specialised, neighbourhood, tyre, odour*).
 - **No Invented Claims**: Uses honest *"Request a quote"* pricing. No fictitious reviews, partner certifications, or environmental statistics.
-- **Accurate Technology Descriptions**: Describes thermal vapour and soil extraction without unverified sanitisation claims or unauthorised manufacturer branding.
+- **Accurate Technology Descriptions**: Explains waterless polymer encapsulation without medical sterilisation claims or unauthorised manufacturer branding.
 - **Booking Transparency**: Explicit notice across all forms that bookings are subject to schedule and location confirmation.

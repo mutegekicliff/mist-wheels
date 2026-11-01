@@ -3,23 +3,28 @@
  * MIST WHEELS — CENTRAL CONFIGURATION FILE
  * ==============================================================================
  * 
- * Edit this single file to update contact numbers, WhatsApp routing, brand copy,
- * service areas, operating hours, and feature toggles.
- * 
- * NOTE REGARDING CONTACT DETAILS:
- * If whatsappNumber or email is left as an empty string (""), the website
- * gracefully provides a copyable booking request and configuration guide
- * without displaying broken links or fake dummy numbers.
+ * CORE SELLING POINT: 100% Mobile Waterless Car Washing
+ * "You don't go to the washing bay—the washing bay comes to you."
+ * No plumbing, no water, no drainage, no fixed structures.
+ * Just a compact, self-contained mobile trolley wheeled directly to wherever you park.
  */
 
 const MIST_CONFIG = {
   // Brand Identity
   brandName: "Mist Wheels",
-  tagline: "Expert car care, wherever you park", // Draft tagline (easily changed)
-  subTagline: "Mobile exterior washes, interior steam cleaning & extraction, and scheduled fleet detailing brought directly to your home, office, or compound across Kampala and Greater Kampala.",
+  tagline: "Mobile Waterless Car Wash — The washing bay that comes to you",
+  subTagline: "No water. No plumbing. No drainage. No permanent structures. Just a compact, self-contained mobile trolley wheeled directly to your parking bay across Kampala and Greater Kampala.",
   
   // Launch Region Summary
   launchServiceArea: "Kampala & Greater Kampala",
+
+  // Core Value Pillars
+  pillars: {
+    mobileConvenience: "You don't go to the washing bay—the bay comes to you.",
+    noPlumbing: "Zero water hookup, plumbing, or drainage needed.",
+    noStructure: "No fixed washing bay, muddy driveway run-off, or permanent structures.",
+    trolleySystem: "Compact, agile mobile trolley wheeled directly to your parking spot."
+  },
 
   // Contact Information
   contact: {
@@ -62,35 +67,35 @@ const MIST_CONFIG = {
       id: "central",
       name: "Central Kampala & Hills",
       tag: "Zone 1",
-      note: "Daily mobile dispatch for homes & executive offices",
+      note: "Daily mobile trolley dispatch for homes, offices & basement parking",
       neighbourhoods: ["Nakasero", "Kololo", "Naguru", "Bugolobi", "Mbuya", "Kamwokya", "Old Kampala"]
     },
     {
       id: "northeast",
       name: "East & North-East Suburbs",
       tag: "Zone 2",
-      note: "Direct residential and office compound service",
+      note: "Direct residential driveway and office compound trolley service",
       neighbourhoods: ["Ntinda", "Kiwatule", "Naalya", "Kira", "Namugongo", "Kyanja", "Kulambiro", "Bukoto"]
     },
     {
       id: "south",
       name: "South & Lake Crescent",
       tag: "Zone 3",
-      note: "Residential compounds & gated estates",
+      note: "Residential compounds & gated estates with zero water run-off",
       neighbourhoods: ["Muyenga", "Munyonyo", "Buziga", "Ggaba", "Makindye", "Kansanga", "Bunga"]
     },
     {
       id: "entebbe-corridor",
       name: "Entebbe Road & Southern Suburbs",
       tag: "Zone 4",
-      note: "Scheduled slots and corporate compound visits",
+      note: "Scheduled mobile slots and corporate fleet compound visits",
       neighbourhoods: ["Lubowa", "Lweza", "Seguku", "Kajjansi", "Akright City", "Entebbe (by advance appointment)"]
     },
     {
       id: "west-north",
       name: "West & North Suburbs",
       tag: "Zone 5",
-      note: "Residential and commercial visits arranged by appointment",
+      note: "Residential and commercial waterless visits arranged by appointment",
       neighbourhoods: ["Rubaga", "Mengó", "Kasubi", "Kawempe", "Nansana (central)", "Gayaza Road corridor"]
     }
   ],
@@ -105,80 +110,82 @@ const MIST_CONFIG = {
     { id: "fleet_commercial", label: "Commercial Fleet / Multi-vehicle" }
   ],
 
-  // Services Catalog
+  // Services Catalog — 100% Mobile Waterless Focus
   services: [
     {
-      id: "maintenance_wash",
-      name: "Maintenance Wash",
-      tagline: "Careful mobile exterior wash & light cabin refresh",
-      duration: "45 – 75 mins",
+      id: "waterless_maintenance_wash",
+      name: "Waterless Exterior Clean",
+      tagline: "Scratch-safe waterless wash & light cabin refresh",
+      duration: "40 – 60 mins",
       pricingLabel: "Request a quote",
-      description: "Designed for vehicles needing a regular swirl-free exterior wash, glass clearing, wheel degreasing, and light interior tidy-up right where you park.",
+      description: "Our signature mobile service. Using advanced waterless polymer encapsulation, we lift Kampala dust, traffic film, and grime without running water, plumbing, or driveway puddles.",
       inclusions: [
-        "Gentle pre-rinse to lift loose sand and Kampala red dust",
-        "pH-neutral hand shampoo wash with clean microfibre mitts",
-        "Wheel face, tyre face, and rim degrease & rinse",
-        "Streak-free exterior window and mirror cleaning",
-        "Door jamb and boot sill wipe-down",
+        "Advanced waterless polymer spray pre-soak to safely encapsulate dust particles",
+        "Multi-stage scratch-safe microfibre lift with clean dedicated cloths",
+        "High-gloss protective polymer finish with UV and rain-repellent barrier",
+        "Waterless wheel face and alloy rim degreasing",
+        "Streak-free crystal clear window and exterior mirror clearing",
+        "Door jamb and boot sill wipe-down (zero water leaks inside cabin)",
         "Cabin floor vacuuming & dashboard dust removal",
-        "Satin tyre dressing application"
+        "Deep black satin tyre dressing"
       ],
       image: "assets/images/showcase/wheel-rim-steam.jpg"
     },
     {
-      id: "interior_deep_clean",
-      name: "Interior Deep Clean & Extraction",
-      tagline: "High-temperature steam cleaning & hot extraction",
-      duration: "2 – 3.5 hours",
+      id: "waterless_interior_deep_clean",
+      name: "Waterless Interior Deep Care",
+      tagline: "Deep fabric soil extraction & cabin sanitisation refresh",
+      duration: "2 – 3 hours",
       badge: "Popular Choice",
       pricingLabel: "Request a quote",
-      description: "Comprehensive cabin restoration targeting embedded red dust, ground-in mud, upholstery stains, air vent grime, and lingering interior odours.",
+      description: "Intensive cabin revival targeting ground-in Kampala red dust, seat stains, cupholder grime, and air vent odours using self-contained mobile extraction on our trolley system.",
       inclusions: [
-        "Deep carpet, boot lining, and seat vacuuming",
-        "High-temperature steam treatment for air vents, cupholders, and crevices",
-        "Hot-water shampoo extraction on fabric seats & carpet floor mats",
+        "Deep carpet, seat fabric, and boot lining high-suction vacuuming",
+        "Spot soil extraction for stubborn stains on seats and floor mats",
+        "Crevice, cupholder, and dashboard detailed brush and wipe",
+        "Air-conditioning vent deep clearance and odour neutralisation",
         "Leather upholstery gentle cleansing & conditioning nourishment",
-        "Headliner spot cleaning & pillar trim wipe-down",
-        "Interior glass clarity treatment (removes oily films and smudges)",
-        "Odour-neutralising cabin vapour refresh"
+        "Headliner spot clearing & interior pillar trim wipe-down",
+        "Streak-free interior glass and windscreen clarity treatment",
+        "Zero damp lingering smell: fast drying under normal ambient air"
       ],
       image: "assets/images/showcase/interior-extraction-machine.jpg"
     },
     {
-      id: "full_detail",
-      name: "Full Vehicle Detail",
-      tagline: "Complete exterior revival & deep interior programme",
-      duration: "3.5 – 5 hours",
+      id: "full_waterless_detail",
+      name: "Full Waterless Vehicle Revival",
+      tagline: "Complete waterless exterior gloss + deep interior care",
+      duration: "3 – 4.5 hours",
       pricingLabel: "Request a quote",
-      description: "Our most thorough bumper-to-bumper mobile treatment combining full exterior rejuvenation and paint sealant with complete interior steam extraction.",
+      description: "Our complete bumper-to-bumper waterless programme. Restores deep paint gloss, removes tar and road grime, seals paintwork, and delivers full interior fabric extraction—all from a single mobile trolley.",
       inclusions: [
-        "Everything included in Maintenance Wash & Interior Deep Clean",
-        "Targeted bug, tar, and road grime removal",
-        "Deep wheel barrel and brake dust removal",
-        "Exterior plastic trim revival and UV protection",
-        "Hand-applied protective paint sealant for gloss & water beading",
-        "Detailed engine bay perimeter tidy-up and steam wipe",
-        "Exhaust tip brightening & chrome polish"
+        "Everything included in Waterless Exterior Clean & Interior Deep Care",
+        "Targeted road tar, bug splatter, and tree sap chemical softening & removal",
+        "Hand-applied protective paint sealant for high gloss and water beading",
+        "Deep wheel face, rim barrel, and brake dust waterless clearing",
+        "Exterior rubber and unpainted black plastic trim UV rejuvenation",
+        "Exhaust tip metal brightening & chrome polish",
+        "Detailed door shut, boot gutter, and bonnet edge wipe-down"
       ],
       image: "assets/images/showcase/detailing-action.jpg"
     },
     {
-      id: "fleet_cleaning",
-      name: "Scheduled Fleet Cleaning",
-      tagline: "Tailored mobile cleaning programmes for company vehicles",
+      id: "waterless_fleet_cleaning",
+      name: "Scheduled Waterless Fleet Cleaning",
+      tagline: "Zero-drainage mobile contracts for corporate pools & offices",
       duration: "Customised by fleet size",
       badge: "Corporate",
       pricingLabel: "Request corporate quote",
-      description: "Structured on-site mobile cleaning contracts for corporate pools, NGOs, delivery fleets, and tour operators across Kampala.",
+      description: "The ideal cleaning solution for corporate office compounds, NGO yards, delivery vans, and basement parking where washing bays, plumbing, or wastewater drainage are strictly forbidden.",
       inclusions: [
-        "On-site service at your corporate yard, depot, or office compound",
-        "Flexible service windows: early morning, evening, or weekend shifts",
-        "Standardised quality checklists for each vehicle in the fleet",
-        "Consolidated monthly invoicing and clear service activity logs",
-        "Zero employee downtime: staff do not leave the office to wash cars",
-        "Controlled low-moisture technology with minimal yard run-off"
+        "On-site service wheeled directly to vehicles in corporate yards or basement bays",
+        "100% waterless operation: zero mud pools, soapy run-off, or slippery tarmac",
+        "No plumbing or water taps required from your premises",
+        "Zero employee downtime: drivers and staff never waste hours queuing at washing bays",
+        "Flexible service windows: before office hours, during workdays, or over weekends",
+        "Standardised per-vehicle quality checklists and monthly consolidated billing"
       ],
-      image: "assets/images/showcase/van-fleet-setup.jpg"
+      image: "assets/images/showcase/mobile-trolley-system.jpg"
     }
   ],
 

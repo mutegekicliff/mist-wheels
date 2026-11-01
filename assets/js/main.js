@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".btn-whatsapp-action").forEach(btn => {
     btn.addEventListener("click", function (e) {
       const topic = this.getAttribute("data-topic") || "General Enquiry";
-      const message = `*Hello Mist Wheels!*\n\nI would like to enquire about your mobile vehicle-cleaning and detailing services in Kampala (${topic}). Please provide further information.`;
+      const message = `*Hello Mist Wheels!*\n\nI would like to enquire about your mobile waterless car washing service in Kampala (${topic}). Please provide further details on your mobile trolley packages and booking availability.`;
       const wa = getWhatsAppDetails(message);
 
       if (!wa.hasNumber && !sessionWhatsApp) {
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const serviceLabel = selectedService ? (selectedService.getAttribute("data-label") || selectedService.value) : "Not specified";
 
       const lines = [
-        `*NEW BOOKING REQUEST — MIST WHEELS*`,
+        `*NEW BOOKING REQUEST — MIST WHEELS (MOBILE WATERLESS CAR WASH)*`,
         `----------------------------------------`,
         `*Customer:* ${fullName.value.trim()}`,
         `*Contact:* ${phoneInput.value.trim()}`,
@@ -302,12 +302,12 @@ document.addEventListener("DOMContentLoaded", function () {
         `*Neighbourhood / Area:* ${neighbourhoodInput.value.trim()}`,
         landmarkVal ? `*Address / Landmark:* ${landmarkVal}` : null,
         `*Vehicle Category:* ${vehicleLabel}`,
-        `*Service Requested:* ${serviceLabel}`,
+        `*Waterless Package:* ${serviceLabel}`,
         `*Preferred Date:* ${dateVal}`,
         `*Preferred Time Slot:* ${timeSlotVal}`,
         notesVal ? `*Additional Notes:* ${notesVal}` : `*Additional Notes:* None`,
         `----------------------------------------`,
-        `_Submitted via Mist Wheels website. Booking requests are subject to schedule confirmation._`
+        `_The washing bay that comes to you. 100% Waterless, zero plumbing, zero drainage. Subject to schedule confirmation._`
       ];
 
       const formattedMessage = lines.filter(Boolean).join("\n");
