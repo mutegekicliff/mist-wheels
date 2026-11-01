@@ -4,6 +4,8 @@ A clean, polished, mobile-first **HTML5** website for **Mist Wheels**, a mobile 
 
 Built purely with **HTML5, CSS3, and Vanilla JavaScript** — zero build tools, zero npm packages, and zero server dependencies required.
 
+Designed in an executive **Automotive Light Theme** featuring authentic vehicle steam-cleaning, interior extraction, and commercial mobile equipment photography extracted from the supplied equipment catalogue.
+
 ---
 
 ## 📁 File Structure
@@ -12,19 +14,29 @@ Built purely with **HTML5, CSS3, and Vanilla JavaScript** — zero build tools, 
 Mist Wheels/
 ├── index.html           # Home page (Hero, Services summary, How it works, Kampala areas)
 ├── services.html        # Detailed Services catalogue (Maintenance Wash, Interior Steam, Full Detail)
-├── fleet.html           # Scheduled Fleet & Business cleaning contracts
-├── about.html           # Ethos, mobile convenience, water stewardship, and quality standards
+├── fleet.html           # Scheduled Fleet & Business cleaning contracts with equipment showcase
+├── about.html           # Ethos, mobile convenience, low-moisture technology, and quality standards
 ├── faqs.html            # Frequently Asked Questions (space, power, drying time, rain, payments)
 ├── contact.html         # Interactive booking form with full validation and WhatsApp dispatch
 ├── assets/
 │   ├── css/
-│   │   └── style.css    # Clean, mobile-first responsive CSS3 styling (dark navy & mist blue)
+│   │   └── style.css    # Clean, mobile-first Light Theme CSS3 (pure white surfaces, slate, mist-blue)
 │   ├── js/
 │   │   ├── config.js    # Single central configuration file for phone, copy, zones & settings
 │   │   └── main.js      # Vanilla JS: mobile menu, validation, WhatsApp routing, accordions
 │   └── images/
-│       ├── logo.svg     # Modern M/W monogram & alloy wheel brand logo
-│       └── favicon.svg  # Crisp SVG browser favicon
+│       ├── logo.svg     # High-contrast light theme logo (charcoal & mist-blue wordmark + alloy mark)
+│       ├── logo-dark.svg# Inverted white logo for dark anchoring footer
+│       ├── favicon.svg  # Crisp SVG browser favicon
+│       └── showcase/    # Real vehicle steam cleaning & detailing equipment photography
+│           ├── hero-steam-wash.jpg           # Mobile steam wash in action on sports car
+│           ├── detailing-action.jpg          # Vehicle steam detailing in studio bay
+│           ├── van-fleet-setup.jpg           # Self-contained van slider setup for corporate fleets
+│           ├── fleet-van-slider.jpg          # Commercial van slide-out drawer mechanism
+│           ├── interior-extraction-machine.jpg # Commercial steam & soil extraction unit
+│           ├── wheel-rim-steam.jpg           # High-pressure steam cleaning alloy wheel & rim
+│           ├── heavy-duty-steam-cleaner.jpg  # Industrial mobile steam generator
+│           └── compact-steam-extractor.jpg   # Compact upholstery extraction machine
 └── README.md            # Documentation & configuration guide
 ```
 
@@ -42,6 +54,14 @@ Because this is a standard HTML5 website, you can view it immediately without in
    ```
    Then open `http://localhost:8000/`.
 3. **Web Hosting**: Upload all files directly to any static host (cPanel, Apache, Nginx, GitHub Pages, Netlify, Cloudflare Pages, Firebase Hosting).
+
+---
+
+## 🎨 Theme & Real Photography
+
+- **Light Theme**: Built around pure white (`#ffffff`) surfaces, subtle slate canvases (`#f8fafc`), crisp borders (`#e2e8f0`), deep charcoal headings (`#0f172a`), rich mist-blue accents (`#0284c7`), and WhatsApp emerald (`#16a34a`).
+- **Real Equipment Photography**: Includes genuine mobile steam-cleaning and extraction photography from the Fortador catalogue, accurately showcasing the thermal vapour process without making unverified dealer or sanitisation claims.
+- **Dual-Mode Logos**: Primary light theme header logo (`logo.svg`) and executive dark footer logo (`logo-dark.svg`).
 
 ---
 
@@ -66,7 +86,7 @@ contact: {
 }
 ```
 
-*Note: If `whatsappNumber` is left blank, the website gracefully provides a copyable message with a settings helper so visitors never see broken links.*
+*Note: If `whatsappNumber` is left blank, the website gracefully provides a copyable message with a settings helper so visitors never encounter broken links.*
 
 ### 2. Changing the Draft Tagline
 ```javascript

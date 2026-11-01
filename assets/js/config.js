@@ -123,7 +123,7 @@ const MIST_CONFIG = {
         "Cabin floor vacuuming & dashboard dust removal",
         "Satin tyre dressing application"
       ],
-      image: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80"
+      image: "assets/images/showcase/wheel-rim-steam.jpg"
     },
     {
       id: "interior_deep_clean",
@@ -142,7 +142,7 @@ const MIST_CONFIG = {
         "Interior glass clarity treatment (removes oily films and smudges)",
         "Odour-neutralising cabin vapour refresh"
       ],
-      image: "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80"
+      image: "assets/images/showcase/interior-extraction-machine.jpg"
     },
     {
       id: "full_detail",
@@ -160,7 +160,7 @@ const MIST_CONFIG = {
         "Detailed engine bay perimeter tidy-up and steam wipe",
         "Exhaust tip brightening & chrome polish"
       ],
-      image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80"
+      image: "assets/images/showcase/detailing-action.jpg"
     },
     {
       id: "fleet_cleaning",
@@ -178,7 +178,7 @@ const MIST_CONFIG = {
         "Zero employee downtime: staff do not leave the office to wash cars",
         "Controlled low-moisture technology with minimal yard run-off"
       ],
-      image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80"
+      image: "assets/images/showcase/van-fleet-setup.jpg"
     }
   ],
 
