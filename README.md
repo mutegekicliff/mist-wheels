@@ -1,85 +1,85 @@
 # Mist Wheels — Mobile Vehicle Cleaning & Detailing
 
-A modern, mobile-first website for **Mist Wheels**, a mobile vehicle-cleaning and detailing service operating across Kampala and Greater Kampala, Uganda.
+A clean, polished, mobile-first **HTML5** website for **Mist Wheels**, a mobile vehicle-cleaning and detailing service operating across Kampala and Greater Kampala, Uganda.
 
-## 🚀 Key Features
-
-- **Mobile-First & PWA-Ready**: Crafted for effortless booking on smartphones, tablets, and desktops.
-- **Direct WhatsApp Booking Engine**: Validates customer details and prepares structured, pre-filled WhatsApp messages for instant dispatch.
-- **Brand Identity**: Features an editable SVG monogram mark combining an aerodynamic alloy wheel with interlocking 'M' & 'W' initials and a subtle mist wave.
-- **Centralized Configuration**: All contact numbers, service areas, taglines, operating hours, and business flags reside in a single file (`src/config/siteConfig.ts`).
-- **Strict Copy & Claims Compliance**:
-  - Clear British English copy throughout.
-  - No invented testimonials, artificial review counts, fake pricing, or unsubstantiated sanitisation/germ claims.
-  - Transparent "Request a quote" model with explicit notice that all bookings are subject to schedule and location confirmation.
-- **Interactive Service Area Directory**: Search tool for Kampala suburbs (Nakasero, Kololo, Naguru, Bugolobi, Ntinda, Kira, Namugongo, Muyenga, Munyonyo, Lubowa, etc.).
-- **Fleet & Business Solutions**: Dedicated corporate section for scheduled fleet upkeep, office parking complexes, and commercial fleets.
+Built purely with **HTML5, CSS3, and Vanilla JavaScript** — zero build tools, zero npm packages, and zero server dependencies required.
 
 ---
 
-## 🛠️ Tech Stack
+## 📁 File Structure
 
-- **Framework**: React 19 + TypeScript
-- **Build Tool**: Vite 8
-- **Styling**: Tailwind CSS v4 (Deep slate navy `#0B132B` / `#090E1A` base, white space, and mist cyan `#38BDF8` accent)
-- **Icons**: Lucide React
+```text
+Mist Wheels/
+├── index.html           # Home page (Hero, Services summary, How it works, Kampala areas)
+├── services.html        # Detailed Services catalogue (Maintenance Wash, Interior Steam, Full Detail)
+├── fleet.html           # Scheduled Fleet & Business cleaning contracts
+├── about.html           # Ethos, mobile convenience, water stewardship, and quality standards
+├── faqs.html            # Frequently Asked Questions (space, power, drying time, rain, payments)
+├── contact.html         # Interactive booking form with full validation and WhatsApp dispatch
+├── assets/
+│   ├── css/
+│   │   └── style.css    # Clean, mobile-first responsive CSS3 styling (dark navy & mist blue)
+│   ├── js/
+│   │   ├── config.js    # Single central configuration file for phone, copy, zones & settings
+│   │   └── main.js      # Vanilla JS: mobile menu, validation, WhatsApp routing, accordions
+│   └── images/
+│       ├── logo.svg     # Modern M/W monogram & alloy wheel brand logo
+│       └── favicon.svg  # Crisp SVG browser favicon
+└── README.md            # Documentation & configuration guide
+```
+
+---
+
+## 🚀 How to Run
+
+Because this is a standard HTML5 website, you can view it immediately without installing any tools:
+
+1. **Directly in your browser**: Double-click [`index.html`](file:///Users/mutegekicliffagaba/Desktop/Websites%20&%20Apps/Mist%20Wheels/index.html) or open it with any web browser (Chrome, Safari, Firefox, Edge).
+2. **Local HTTP server** (optional):
+   ```bash
+   # Using Python (standard on macOS)
+   python3 -m http.server 8000
+   ```
+   Then open `http://localhost:8000/`.
+3. **Web Hosting**: Upload all files directly to any static host (cPanel, Apache, Nginx, GitHub Pages, Netlify, Cloudflare Pages, Firebase Hosting).
 
 ---
 
 ## ⚙️ Configuration Guide
 
-All business details, contact information, and editable content are kept strictly separate from layout components in:
+All contact details, phone numbers, draft taglines, and Kampala coverage zones are kept in one clearly commented file:
 
 ```
-src/config/siteConfig.ts
+assets/js/config.js
 ```
 
-### 1. Connecting Your Official WhatsApp Number
-Open `src/config/siteConfig.ts` and update the `contact` block:
+### 1. Setting Your Official WhatsApp Number
+Open `assets/js/config.js` and set your active WhatsApp number in international format without `+` or spaces (Uganda code: `256`):
 
-```typescript
+```javascript
 contact: {
-  // Enter number in international format without '+' or spaces (e.g. Uganda 256...)
-  whatsappNumber: '256770000000', 
-  displayWhatsApp: '+256 770 000 000',
-  phone: '+256 770 000 000',
-  email: 'info@mistwheels.ug',
+  whatsappNumber: "256770000000",
+  displayWhatsApp: "+256 770 000 000",
+  phone: "+256 770 000 000",
+  email: "info@mistwheels.ug",
   ...
 }
 ```
-*Note: If `whatsappNumber` is left blank, the website gracefully shows a setup notice and allows users to copy their booking details to the clipboard rather than opening a broken link.*
 
-### 2. Updating Tagline & Copy
-```typescript
-brandName: 'Mist Wheels',
-tagline: 'Expert car care, wherever you park',
+*Note: If `whatsappNumber` is left blank, the website gracefully provides a copyable message with a settings helper so visitors never see broken links.*
+
+### 2. Changing the Draft Tagline
+```javascript
+tagline: "Expert car care, wherever you park",
 ```
 
-### 3. Adding Confirmed Prices or Genuine Reviews Later
-When verified pricing tariffs and genuine customer testimonials become available, simply toggle the feature flags in `siteConfig.ts`:
-
-```typescript
-features: {
-  showPricingSection: true, // Shows tariff tables once set
-  showTestimonials: true,   // Shows real customer reviews once collected
-}
-```
+### 3. Adding More Kampala Suburbs
+Simply add strings to the `serviceZones` array in `assets/js/config.js`. They automatically appear in the interactive suburb search tool and booking forms.
 
 ---
 
-## 💻 Development & Build
-
-### Running Locally
-```bash
-npm run dev
-```
-
-### Production Build
-```bash
-npm run build
-```
-
-### Preview Production Build
-```bash
-npm run preview
-```
+## 🔒 Compliance & Integrity
+- **British English**: Consistent spelling throughout (*programme, honour, colour, specialised, neighbourhood*).
+- **No Invented Claims**: Uses honest *"Request a quote"* pricing. No fictitious reviews, partner certifications, or environmental statistics.
+- **Accurate Technology Descriptions**: Describes thermal vapour and soil extraction without unverified sanitisation claims or unauthorised manufacturer branding.
+- **Booking Transparency**: Explicit notice across all forms that bookings are subject to schedule and location confirmation.

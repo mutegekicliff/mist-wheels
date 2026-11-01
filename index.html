@@ -1,31 +1,668 @@
 <!DOCTYPE html>
-<html lang="en-GB" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Mist Wheels | Mobile Vehicle Cleaning & Detailing | Kampala</title>
-    <meta name="title" content="Mist Wheels | Mobile Vehicle Cleaning & Detailing | Kampala" />
-    <meta name="description" content="Professional mobile vehicle cleaning and detailing delivered to your doorstep, workplace, or fleet depot across Kampala and Greater Kampala. Mobile exterior wash, interior steam cleaning and extraction." />
-    
-    <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mist Wheels | Expert car care, wherever you park" />
-    <meta property="og:description" content="Mobile exterior washing, deep interior steam cleaning and extraction, and scheduled fleet care in Kampala and Greater Kampala." />
-    <meta property="og:image" content="/og-image.png" />
-    
-    <!-- Theme & Colors -->
-    <meta name="theme-color" content="#0b1329" />
-    
-    <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mist Wheels | Mobile Vehicle Cleaning & Detailing | Kampala, Uganda</title>
+  <meta name="description" content="Mist Wheels delivers mobile exterior washes, interior steam cleaning and extraction, and scheduled fleet detailing directly to your home, workplace, or compound across Kampala and Greater Kampala.">
+  <meta name="theme-color" content="#070c16">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mist Wheels | Expert car care, wherever you park">
+  <meta property="og:description" content="Mobile exterior washing, deep interior steam extraction, and scheduled fleet care across Kampala. We come to you.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-item">
+        <span class="text-accent">📍</span>
+        <span>Mobile vehicle cleaning & detailing across <strong>Kampala & Greater Kampala</strong></span>
+      </div>
+      <div class="top-bar-item">
+        <span class="text-green">✓</span>
+        <span>Low-moisture steam vapour &bull; No compound run-off &bull; Mon – Sat 07:30 – 18:00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Mist Wheels Homepage">
+        <img src="assets/images/logo.svg" alt="Mist Wheels Logo" width="180" height="42">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="fleet.html" class="nav-link">Fleet & Business</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faqs.html" class="nav-link">FAQs</a>
+        <a href="contact.html" class="nav-link">Contact & Book</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-sm btn-outline-whatsapp btn-whatsapp-action" data-topic="Header Quick Enquiry">
+          <span>💬 WhatsApp</span>
+        </button>
+        <a href="contact.html" class="btn btn-sm btn-primary">
+          <span>Book Now</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          &#9776;
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+      <a href="index.html" class="nav-link active">Home &rarr;</a>
+      <a href="services.html" class="nav-link">Services &rarr;</a>
+      <a href="fleet.html" class="nav-link">Fleet & Business &rarr;</a>
+      <a href="about.html" class="nav-link">About Mist Wheels &rarr;</a>
+      <a href="faqs.html" class="nav-link">Frequently Asked Questions &rarr;</a>
+      <a href="contact.html" class="nav-link">Contact & Book Online &rarr;</a>
+      <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+        <button type="button" class="btn btn-whatsapp btn-whatsapp-action" data-topic="Mobile Menu" style="flex: 1;">
+          Chat on WhatsApp
+        </button>
+        <a href="contact.html" class="btn btn-primary" style="flex: 1;">
+          Book Service
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-tag">
+          <span>📍 Kampala & Greater Kampala Mobile Dispatch</span>
+        </div>
+        <h1>
+          Expert car care,<br>
+          <span class="text-accent">wherever you park.</span>
+        </h1>
+        <p class="hero-lead">
+          Mist Wheels brings professional mobile exterior washes, interior steam cleaning, and hot-water soil extraction directly to your home, workplace, or compound. Skip the queue and traffic—we care for your vehicle while you focus on your day.
+        </p>
+
+        <div class="hero-ctas">
+          <button type="button" class="btn btn-lg btn-whatsapp btn-whatsapp-action" data-topic="Hero Button Enquiry">
+            <span>💬 Book on WhatsApp</span>
+          </button>
+          <a href="services.html" class="btn btn-lg btn-secondary">
+            <span>Explore Services &rarr;</span>
+          </a>
+          <a href="contact.html" class="btn btn-lg btn-primary">
+            <span>Online Booking Form</span>
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Home, office & compound dispatch</span>
+          </div>
+          <div class="badge-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>High-temperature low-moisture steam</span>
+          </div>
+          <div class="badge-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Zero compound mud pools or run-off</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-media">
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=800&q=80" 
+               alt="Precision mobile steam detailing on car exterior" 
+               class="hero-card-img"
+               loading="eager">
+          <div class="hero-card-body">
+            <div class="hero-card-meta">
+              <span>Mobile Detailing Unit</span>
+              <span style="color: var(--text-secondary); font-family: monospace;">Kampala Metro</span>
+            </div>
+            <p class="hero-card-text">
+              High-pressure thermal vapour loosens road grime, mud, and dust without scratching paintwork or drenching parking areas.
+            </p>
+            <div style="display: flex; gap: 0.75rem; font-size: 0.75rem; color: var(--text-secondary);">
+              <span class="text-accent">✓ Paint safe</span>
+              <span>&bull;</span>
+              <span class="text-accent">✓ Fast fabric drying</span>
+              <span>&bull;</span>
+              <span class="text-accent">✓ No mess</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction to Mobile Steam Cleaning & Detailing -->
+  <section style="background-color: var(--bg-primary); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Low-Moisture Technology</div>
+        <h2>A superior clean designed for Kampala conditions</h2>
+        <p>
+          Kampala vehicles battle fine red murram dust, sudden tropical downpours, and oily traffic film. Conventional roadside washing bays often rely on contaminated buckets and harsh water streams that cause paint swirl marks and muddy driveway run-off.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="tech-block">
+          <div class="tech-icon">💨</div>
+          <h3>High-Temperature Steam Vapour</h3>
+          <p>
+            Low-moisture steam breaks down grease, dried mud, and road film without soaking vehicle interiors or causing puddles in private residential driveways.
+          </p>
+        </div>
+
+        <div class="tech-block">
+          <div class="tech-icon">🪑</div>
+          <h3>Deep Soil Extraction</h3>
+          <p>
+            Specialised hot-water extraction penetrates seat fabrics and floor carpets, lifting embedded dirt directly into recovery tanks for rapid drying.
+          </p>
+        </div>
+
+        <div class="tech-block">
+          <div class="tech-icon">🏢</div>
+          <h3>Self-Contained Mobile Unit</h3>
+          <p>
+            Our service vehicles bring commercial-grade hoses and equipment directly to your premises, allowing convenient care while you work or rest at home.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Service Menu</div>
+        <h2>Comprehensive mobile vehicle care</h2>
+        <p>
+          Choose from careful regular maintenance, thorough interior steam restoration, complete bumper-to-bumper detailing, or commercial fleet contracts.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <!-- 1. Maintenance Wash -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=600&q=80" 
+                 alt="Exterior maintenance wash with clean mitts" 
+                 class="service-img" loading="lazy">
+            <span class="service-duration">⏱ 45 – 75 mins</span>
+          </div>
+          <div class="service-body">
+            <div>
+              <h3 class="service-title">Maintenance Wash</h3>
+              <p class="service-tagline">Careful exterior wash & light cabin refresh</p>
+              <p class="service-desc">
+                Ideal for weekly or fortnightly upkeep. Gentle pre-rinse to lift red dust, pH-neutral hand shampoo, rim degrease, door jamb wipe, and cabin vacuuming.
+              </p>
+              <ul class="service-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Safe grit-guard hand shampoo wash</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Wheel face & tyre face degreasing</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Streak-free exterior glass clearing</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Floor vacuum & dashboard dust wipe</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <div class="pricing-note">
+                Pricing
+                <strong>Request a quote</strong>
+              </div>
+              <a href="contact.html?service=maintenance_wash" class="btn btn-sm btn-secondary">
+                Request Quote
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Interior Deep Clean -->
+        <div class="service-card featured">
+          <span class="card-badge">Popular</span>
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=600&q=80" 
+                 alt="Steam cleaning car upholstery and seats" 
+                 class="service-img" loading="lazy">
+            <span class="service-duration">⏱ 2 – 3.5 hrs</span>
+          </div>
+          <div class="service-body">
+            <div>
+              <h3 class="service-title">Interior Deep Clean</h3>
+              <p class="service-tagline">Steam cleaning & hot-water extraction</p>
+              <p class="service-desc">
+                Intensive cabin revival targeting ground-in dirt, fabric stains, air vent grime, cupholder crevices, and lingering odours.
+              </p>
+              <ul class="service-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High-temperature steam in air vents</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Hot-water fabric extraction</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Leather gentle cleansing & care</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Deep carpet & boot lining vacuum</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <div class="pricing-note">
+                Pricing
+                <strong>Request a quote</strong>
+              </div>
+              <a href="contact.html?service=interior_deep_clean" class="btn btn-sm btn-primary">
+                Book Service
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Full Detail -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&q=80" 
+                 alt="Complete exterior paint sealant and interior detail" 
+                 class="service-img" loading="lazy">
+            <span class="service-duration">⏱ 3.5 – 5 hrs</span>
+          </div>
+          <div class="service-body">
+            <div>
+              <h3 class="service-title">Full Vehicle Detail</h3>
+              <p class="service-tagline">Exterior revival & full interior extraction</p>
+              <p class="service-desc">
+                Our most thorough programme. Combines all interior steam extraction with bug/tar removal, wheel barrel cleaning, plastic revival, and paint sealant.
+              </p>
+              <ul class="service-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete interior steam programme</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Paint protection sealant coat</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Bug, tar & road grime removal</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Exterior black trim rejuvenation</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <div class="pricing-note">
+                Pricing
+                <strong>Request a quote</strong>
+              </div>
+              <a href="contact.html?service=full_detail" class="btn btn-sm btn-secondary">
+                Request Quote
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Fleet Cleaning -->
+        <div class="service-card">
+          <span class="card-badge" style="background-color: var(--bg-surface-elevated); color: var(--text-white); border: 1px solid var(--border);">Corporate</span>
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=600&q=80" 
+                 alt="Corporate fleet of commercial vehicles" 
+                 class="service-img" loading="lazy">
+            <span class="service-duration">⏱ Flexible</span>
+          </div>
+          <div class="service-body">
+            <div>
+              <h3 class="service-title">Fleet Cleaning</h3>
+              <p class="service-tagline">Scheduled on-site maintenance contracts</p>
+              <p class="service-desc">
+                For corporate motor pools, delivery vans, NGOs, and tour companies. We service your vehicles at your yard with minimal disruption to staff.
+              </p>
+              <ul class="service-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> On-site servicing at your compound</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Early morning or weekend visits</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Standardised per-vehicle checklists</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Consolidated monthly billing</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <div class="pricing-note">
+                Corporate Rates
+                <strong>Custom Proposal</strong>
+              </div>
+              <a href="fleet.html" class="btn btn-sm btn-secondary">
+                Fleet Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing transparency callout -->
+      <div style="margin-top: 2.5rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); max-width: 650px; margin-inline: auto;">
+        <p>
+          * Pricing depends on vehicle category (Saloon, SUV, Pickup, Minibus, Commercial) and baseline condition. All bookings are confirmed with transparent quotes before dispatch.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section style="background-color: var(--bg-primary); border-block: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Convenience Defined</div>
+        <h2>How mobile vehicle care works</h2>
+        <p>Four simple steps to restore your car without leaving your home or office.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="step-card">
+          <div>
+            <div class="step-num">01</div>
+            <h3>Choose a service</h3>
+            <p>Select from Maintenance Wash, Interior Deep Clean, Full Detail, or Fleet Upkeep based on your vehicle's needs.</p>
+          </div>
+          <div class="step-highlight">✓ Clear quote request</div>
+        </div>
+
+        <div class="step-card">
+          <div>
+            <div class="step-num">02</div>
+            <h3>Share location & time</h3>
+            <p>Tell us your neighbourhood in Kampala and your preferred date and time slot (Morning, Midday, or Afternoon).</p>
+          </div>
+          <div class="step-highlight">✓ Home or workplace</div>
+        </div>
+
+        <div class="step-card">
+          <div>
+            <div class="step-num">03</div>
+            <h3>Receive confirmation</h3>
+            <p>Our team reviews your location and booking schedule, confirming your appointment promptly via WhatsApp.</p>
+          </div>
+          <div class="step-highlight">✓ Prompt arrival window</div>
+        </div>
+
+        <div class="step-card">
+          <div>
+            <div class="step-num">04</div>
+            <h3>Have vehicle cleaned</h3>
+            <p>Our mobile unit arrives fully equipped. We detail your vehicle while you work or relax—no messy compound puddles.</p>
+          </div>
+          <div class="step-highlight">✓ Low-moisture care</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 2.5rem; text-align: center;">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Book Your Slot Online &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet & Business Services Section -->
+  <section>
+    <div class="container">
+      <div class="hero-grid" style="align-items: center;">
+        <div>
+          <div class="section-tag">Fleet & Commercial</div>
+          <h2>Scheduled cleaning programmes for Kampala businesses</h2>
+          <p class="hero-lead">
+            Eliminate unproductive driver hours lost queuing at crowded car washing bays. Mist Wheels establishes structured mobile detailing contracts for corporate motor pools, NGOs, delivery fleets, and diplomatic missions.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; font-size: 0.88rem; color: var(--text-primary);">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span class="text-accent">✓</span>
+              <span><strong>Zero driver downtime:</strong> Vehicles are cleaned on-site at your compound.</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span class="text-accent">✓</span>
+              <span><strong>Flexible service windows:</strong> Early mornings, evenings, or weekend visits.</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span class="text-accent">✓</span>
+              <span><strong>Consolidated accounts:</strong> Transparent service logs and monthly invoicing.</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="fleet.html" class="btn btn-secondary">
+              <span>View Fleet Programme &rarr;</span>
+            </a>
+            <a href="contact.html?service=fleet_cleaning" class="btn btn-primary">
+              <span>Request Fleet Quote</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" 
+               alt="Fleet vehicles serviced on-site" 
+               class="hero-card-img" loading="lazy">
+          <div class="hero-card-body">
+            <h4 style="font-size: 1rem; color: var(--text-white); margin-bottom: 0.35rem;">Corporate Compound Servicing</h4>
+            <p style="font-size: 0.82rem; color: var(--text-secondary);">
+              Clean and orderly mobile setup suitable for office parks, embassy compounds, and secure commercial parking facilities across Kampala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kampala & Greater Kampala Service Area Section -->
+  <section style="background-color: var(--bg-primary); border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Coverage Perimeter</div>
+        <h2>Serving Kampala & Greater Kampala</h2>
+        <p>
+          Our mobile cleaning units operate throughout major residential hills, suburban estates, and commercial hubs.
+        </p>
+      </div>
+
+      <!-- Interactive Search -->
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="suburbSearchInput" class="search-input" placeholder="Type your neighbourhood (e.g. Kololo, Kira, Muyenga, Naguru)...">
+        <div id="suburbSearchResults" style="display: none; margin-top: 0.75rem; padding: 0.75rem; background-color: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-sm);"></div>
+      </div>
+
+      <div class="grid-3">
+        <!-- Zone 1 -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-header">
+              <h3 style="font-size: 1.05rem;">Central Kampala & Hills</h3>
+              <span class="zone-tag">Zone 1</span>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-muted);">Daily mobile slots for homes, offices & diplomatic missions.</p>
+            <div class="zone-suburbs">
+              <span class="suburb-pill">Nakasero</span>
+              <span class="suburb-pill">Kololo</span>
+              <span class="suburb-pill">Naguru</span>
+              <span class="suburb-pill">Bugolobi</span>
+              <span class="suburb-pill">Mbuya</span>
+              <span class="suburb-pill">Kamwokya</span>
+            </div>
+          </div>
+          <a href="contact.html?neighbourhood=Kololo" class="text-accent" style="font-size: 0.78rem; font-weight: 700;">Book in Zone 1 &rarr;</a>
+        </div>
+
+        <!-- Zone 2 -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-header">
+              <h3 style="font-size: 1.05rem;">East & North-East Suburbs</h3>
+              <span class="zone-tag">Zone 2</span>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-muted);">Direct home & residential compound visits.</p>
+            <div class="zone-suburbs">
+              <span class="suburb-pill">Ntinda</span>
+              <span class="suburb-pill">Kiwatule</span>
+              <span class="suburb-pill">Naalya</span>
+              <span class="suburb-pill">Kira</span>
+              <span class="suburb-pill">Namugongo</span>
+              <span class="suburb-pill">Bukoto</span>
+            </div>
+          </div>
+          <a href="contact.html?neighbourhood=Ntinda" class="text-accent" style="font-size: 0.78rem; font-weight: 700;">Book in Zone 2 &rarr;</a>
+        </div>
+
+        <!-- Zone 3 -->
+        <div class="zone-card">
+          <div>
+            <div class="zone-header">
+              <h3 style="font-size: 1.05rem;">South & Lake Crescent</h3>
+              <span class="zone-tag">Zone 3</span>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-muted);">Gated estates & residential driveways.</p>
+            <div class="zone-suburbs">
+              <span class="suburb-pill">Muyenga</span>
+              <span class="suburb-pill">Munyonyo</span>
+              <span class="suburb-pill">Buziga</span>
+              <span class="suburb-pill">Ggaba</span>
+              <span class="suburb-pill">Makindye</span>
+              <span class="suburb-pill">Kansanga</span>
+            </div>
+          </div>
+          <a href="contact.html?neighbourhood=Muyenga" class="text-accent" style="font-size: 0.78rem; font-weight: 700;">Book in Zone 3 &rarr;</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.5rem; text-align: center; font-size: 0.82rem; color: var(--text-secondary);">
+        Also servicing <strong>Lubowa, Entebbe Road corridor, Nansana, and Rubaga</strong>. Locations outside Greater Kampala are serviced by prior arrangement.
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section style="background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-dark) 100%); text-align: center;">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Ready for meticulous car care wherever you park?</h2>
+      <p style="margin-bottom: 2rem;">
+        Tell us your neighbourhood and vehicle category. We prepare your request for instant dispatch confirmation.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <button type="button" class="btn btn-lg btn-whatsapp btn-whatsapp-action" data-topic="Final CTA">
+          <span>💬 Book on WhatsApp</span>
+        </button>
+        <a href="contact.html" class="btn btn-lg btn-primary">
+          <span>Use Booking Form &rarr;</span>
+        </a>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1.25rem;">
+        * Booking requests are subject to schedule and location confirmation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Floating Sticky WhatsApp Button (Mobile) -->
+  <aside aria-label="Floating WhatsApp Contact">
+    <button type="button" class="floating-whatsapp btn-whatsapp-action" data-topic="Floating Button" aria-label="Book on WhatsApp">
+      <span>💬</span>
+      <span>WhatsApp Booking</span>
+    </button>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+          <img src="assets/images/logo.svg" alt="Mist Wheels Logo" width="170" height="38">
+        </a>
+        <p style="font-size: 0.8rem; line-height: 1.6; margin-bottom: 1rem;">
+          Mist Wheels is a Ugandan mobile vehicle-cleaning and detailing service delivering exterior washes, interior steam cleaning & extraction, and scheduled fleet care across Kampala and Greater Kampala.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--text-secondary);">
+          📍 Mobile Dispatch Hub, Kampala, Uganda<br>
+          🕒 Mon – Sat: 07:30 – 18:00
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#maintenance-wash">Maintenance Wash</a></li>
+          <li><a href="services.html#interior-clean">Interior Steam & Extraction</a></li>
+          <li><a href="services.html#full-detail">Full Vehicle Detail</a></li>
+          <li><a href="fleet.html">Scheduled Fleet Cleaning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Mist Wheels</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact & Book</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Dispatch & Settings</h4>
+        <p style="font-size: 0.78rem; margin-bottom: 0.75rem;">
+          All quotes and appointments are confirmed prior to mobile unit dispatch.
+        </p>
+        <button type="button" class="btn btn-sm btn-secondary btn-open-config" style="width: 100%;">
+          ⚙️ Owner / Contact Settings
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; <span id="currentYear">2026</span> Mist Wheels. All rights reserved. Registered in Uganda.</div>
+      <div>Notice: All bookings are subject to schedule and location confirmation.</div>
+    </div>
+  </footer>
+
+  <!-- Owner Settings Assistant Modal -->
+  <div class="modal-overlay" id="configModal" role="dialog" aria-modal="true" aria-labelledby="cfgModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h3 id="cfgModalTitle" style="font-size: 1.15rem; color: var(--text-white);">Mist Wheels Contact Settings</h3>
+          <p style="font-size: 0.78rem; color: var(--text-muted);">Central configuration helper</p>
+        </div>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+        <p style="margin-bottom: 0.75rem;">
+          Contact details and business variables are controlled in:
+          <br><code style="background-color: var(--bg-dark); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--mist-blue); font-family: monospace;">assets/js/config.js</code>
+        </p>
+        <p style="margin-bottom: 0.75rem;">
+          To test direct WhatsApp message transmission in your browser right now, enter an active phone number in international format (e.g. <strong style="color: var(--text-white);">256770000000</strong>):
+        </p>
+        <form id="sessionNumberForm" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+          <input type="text" id="sessionNumberInput" class="form-control" placeholder="256..." style="font-family: monospace;">
+          <button type="submit" class="btn btn-sm btn-primary">Apply</button>
+        </form>
+      </div>
+      <button type="button" class="btn btn-sm btn-secondary modal-close-btn" style="width: 100%;">Close Settings</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

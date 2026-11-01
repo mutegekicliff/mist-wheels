@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book Mobile Detailing | Mist Wheels Kampala</title>
+  <meta name="description" content="Schedule mobile vehicle cleaning and steam detailing in Kampala. Fill in your vehicle and neighbourhood details to prepare your WhatsApp booking request.">
+  <meta name="theme-color" content="#070c16">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-item">
+        <span class="text-accent">📍</span>
+        <span>Mobile vehicle cleaning & detailing across <strong>Kampala & Greater Kampala</strong></span>
+      </div>
+      <div class="top-bar-item">
+        <span class="text-green">✓</span>
+        <span>All bookings are subject to schedule & location confirmation prior to dispatch</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Mist Wheels Homepage">
+        <img src="assets/images/logo.svg" alt="Mist Wheels Logo" width="180" height="42">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="fleet.html" class="nav-link">Fleet & Business</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faqs.html" class="nav-link">FAQs</a>
+        <a href="contact.html" class="nav-link active">Contact & Book</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-sm btn-outline-whatsapp btn-whatsapp-action" data-topic="Contact Header">
+          <span>💬 WhatsApp</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+      <a href="index.html" class="nav-link">Home &rarr;</a>
+      <a href="services.html" class="nav-link">Services &rarr;</a>
+      <a href="fleet.html" class="nav-link">Fleet & Business &rarr;</a>
+      <a href="about.html" class="nav-link">About Mist Wheels &rarr;</a>
+      <a href="faqs.html" class="nav-link">Frequently Asked Questions &rarr;</a>
+      <a href="contact.html" class="nav-link active">Contact & Book Online &rarr;</a>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: radial-gradient(circle at 50% 20%, rgba(56, 189, 248, 0.08), transparent 70%), var(--bg-dark); border-bottom: 1px solid var(--border); padding-block: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <div class="section-tag">Direct Mobile Dispatch</div>
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Book Mobile Vehicle Detailing</h1>
+      <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.6;">
+        Complete the form below with your vehicle and location details. Your submission will prepare a clear, formatted WhatsApp message for prompt scheduling confirmation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Booking Form & Info Grid -->
+  <section>
+    <div class="container">
+      
+      <!-- Mandatory Confirmation Notice -->
+      <div style="background-color: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1rem 1.25rem; font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-size: 1.2rem; color: var(--mist-blue);">ℹ️</span>
+        <div>
+          <strong style="color: var(--text-white);">Important Notice:</strong> All booking requests are subject to schedule and location confirmation by the Mist Wheels operations team prior to dispatch.
+        </div>
+      </div>
+
+      <div class="hero-grid" style="align-items: flex-start; gap: 3rem;">
+        
+        <!-- Left: The Interactive Form -->
+        <div class="booking-card">
+          <form id="bookingForm" novalidate>
+            
+            <!-- Step 1: Contact Details -->
+            <div class="form-step">
+              <div class="step-legend">
+                <span class="step-badge">1</span>
+                <span>Customer Contact Details</span>
+              </div>
+
+              <div class="grid-2">
+                <div class="form-group">
+                  <label for="fullNameInput" class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fullNameInput" class="form-control" placeholder="e.g. David Mukasa" required>
+                  <div class="field-error" id="nameError">Please enter your name.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phoneInput" class="form-label">Phone / WhatsApp Number <span class="req">*</span></label>
+                  <input type="tel" id="phoneInput" class="form-control" placeholder="e.g. 0772 123 456 or +256 7..." required>
+                  <div class="field-error" id="phoneError">Please provide a valid contact number.</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput" class="form-label">Email Address <span style="color: var(--text-muted); font-weight: 400;">(Optional for booking confirmation & invoicing)</span></label>
+                <input type="email" id="emailInput" class="form-control" placeholder="name@company.com">
+              </div>
+            </div>
+
+            <!-- Step 2: Location in Kampala -->
+            <div class="form-step">
+              <div class="step-legend">
+                <span class="step-badge">2</span>
+                <span>Location in Kampala & Greater Kampala</span>
+              </div>
+
+              <div class="grid-2">
+                <div class="form-group">
+                  <label for="neighbourhoodInput" class="form-label">Neighbourhood / Suburb <span class="req">*</span></label>
+                  <input type="text" id="neighbourhoodInput" list="suburbsList" class="form-control" placeholder="Select or type (e.g. Kololo, Kira, Nakasero)" required>
+                  <datalist id="suburbsList">
+                    <option value="Kololo">
+                    <option value="Nakasero">
+                    <option value="Naguru">
+                    <option value="Bugolobi">
+                    <option value="Muyenga">
+                    <option value="Munyonyo">
+                    <option value="Ntinda">
+                    <option value="Kiwatule">
+                    <option value="Naalya">
+                    <option value="Kira">
+                    <option value="Namugongo">
+                    <option value="Lubowa">
+                    <option value="Lweza">
+                    <option value="Seguku">
+                    <option value="Bukoto">
+                    <option value="Kamwokya">
+                    <option value="Ggaba">
+                    <option value="Kansanga">
+                    <option value="Buziga">
+                    <option value="Entebbe Road Corridor">
+                  </datalist>
+                  <div class="field-error" id="areaError">Please enter your neighbourhood or area.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="landmarkInput" class="form-label">Specific Address / Landmark <span style="color: var(--text-muted); font-weight: 400;">(Helpful for dispatch)</span></label>
+                  <input type="text" id="landmarkInput" class="form-control" placeholder="e.g. Plot 12, Black Gate, Near Acacia Mall">
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Vehicle Category -->
+            <div class="form-step">
+              <div class="step-legend">
+                <span class="step-badge">3</span>
+                <span>Select Vehicle Category <span class="req">*</span></span>
+              </div>
+
+              <div class="selection-grid">
+                <label class="radio-card">
+                  <input type="radio" name="vehicleType" value="saloon" data-label="Saloon / Hatchback" required>
+                  <span style="font-size: 0.82rem; font-weight: 600;">Saloon / Hatchback</span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="vehicleType" value="compact_suv" data-label="Compact SUV / Crossover">
+                  <span style="font-size: 0.82rem; font-weight: 600;">Compact SUV</span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="vehicleType" value="full_suv" data-label="Full-size SUV / 4x4">
+                  <span style="font-size: 0.82rem; font-weight: 600;">Full-size SUV / 4x4</span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="vehicleType" value="pickup" data-label="Double-Cabin Pickup">
+                  <span style="font-size: 0.82rem; font-weight: 600;">Double-Cabin Pickup</span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="vehicleType" value="van_minibus" data-label="Executive Van / Minibus">
+                  <span style="font-size: 0.82rem; font-weight: 600;">Executive Van / Minibus</span>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="vehicleType" value="fleet_commercial" data-label="Commercial Fleet">
+                  <span style="font-size: 0.82rem; font-weight: 600;">Commercial Fleet</span>
+                </label>
+              </div>
+              <div class="field-error" id="vehicleError">Please choose your vehicle category.</div>
+            </div>
+
+            <!-- Step 4: Service Requested -->
+            <div class="form-step">
+              <div class="step-legend">
+                <span class="step-badge">4</span>
+                <span>Service Requested <span class="req">*</span></span>
+              </div>
+
+              <div class="grid-2">
+                <label class="radio-card">
+                  <input type="radio" name="serviceRequested" value="maintenance_wash" data-label="Maintenance Wash" required>
+                  <div>
+                    <strong style="display: block; font-size: 0.85rem; color: var(--text-white);">Maintenance Wash</strong>
+                    <span style="font-size: 0.75rem; color: var(--text-secondary);">Exterior wash & light cabin tidy (45-75 mins)</span>
+                  </div>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="serviceRequested" value="interior_deep_clean" data-label="Interior Deep Clean & Extraction">
+                  <div>
+                    <strong style="display: block; font-size: 0.85rem; color: var(--text-white);">Interior Deep Clean</strong>
+                    <span style="font-size: 0.75rem; color: var(--text-secondary);">Steam extraction & stain removal (2-3.5 hrs)</span>
+                  </div>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="serviceRequested" value="full_detail" data-label="Full Vehicle Detail">
+                  <div>
+                    <strong style="display: block; font-size: 0.85rem; color: var(--text-white);">Full Vehicle Detail</strong>
+                    <span style="font-size: 0.75rem; color: var(--text-secondary);">Exterior revival & full interior steam (3.5-5 hrs)</span>
+                  </div>
+                </label>
+
+                <label class="radio-card">
+                  <input type="radio" name="serviceRequested" value="fleet_cleaning" data-label="Scheduled Fleet Cleaning">
+                  <div>
+                    <strong style="display: block; font-size: 0.85rem; color: var(--text-white);">Scheduled Fleet Cleaning</strong>
+                    <span style="font-size: 0.75rem; color: var(--text-secondary);">Custom contracts for companies & NGOs</span>
+                  </div>
+                </label>
+              </div>
+              <div class="field-error" id="serviceError">Please select the requested service.</div>
+            </div>
+
+            <!-- Step 5: Schedule & Preferences -->
+            <div class="form-step">
+              <div class="step-legend">
+                <span class="step-badge">5</span>
+                <span>Preferred Date & Schedule</span>
+              </div>
+
+              <div class="grid-2">
+                <div class="form-group">
+                  <label for="preferredDateInput" class="form-label">Preferred Date <span class="req">*</span></label>
+                  <input type="date" id="preferredDateInput" class="form-control" required>
+                  <div class="field-error" id="dateError">Please select a preferred date.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="timeSlotSelect" class="form-label">Preferred Time Slot <span class="req">*</span></label>
+                  <select id="timeSlotSelect" class="form-control">
+                    <option value="Morning (08:00 – 11:00)">Morning (08:00 – 11:00)</option>
+                    <option value="Midday (11:00 – 14:00)">Midday (11:00 – 14:00)</option>
+                    <option value="Afternoon (14:00 – 17:00)">Afternoon (14:00 – 17:00)</option>
+                    <option value="Flexible / Anytime on this date">Flexible / Anytime on this date</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="notesInput" class="form-label">Additional Instructions <span style="color: var(--text-muted); font-weight: 400;">(e.g. child seat extraction, tap location, gate entry)</span></label>
+                <textarea id="notesInput" class="form-control" rows="3" placeholder="Tell us anything specific about your car condition or parking location..."></textarea>
+              </div>
+
+              <div class="form-group" style="margin-top: 1rem;">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="confirmTerms" checked required>
+                  <span>I acknowledge that all bookings are subject to schedule and location confirmation prior to dispatch.</span>
+                </label>
+                <div class="field-error" id="termsError">Please confirm the acknowledgment checkbox.</div>
+              </div>
+            </div>
+
+            <!-- Submit Button Area -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <button type="submit" class="btn btn-lg btn-whatsapp" style="width: 100%;">
+                <span>💬 Submit & Open WhatsApp</span>
+              </button>
+              <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+                Prepares a complete booking request for immediate transmission to our operations team.
+              </p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Right: Dispatch Info & Contact Help -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          
+          <div class="tech-block">
+            <h3 style="margin-bottom: 0.75rem;">Direct Dispatch Info</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+              Mist Wheels operates mobile detailing teams throughout Kampala. Once you submit your request, our coordinator verifies vehicle details and assigns the nearest available mobile unit.
+            </p>
+            <div style="font-size: 0.8rem; display: flex; flex-direction: column; gap: 0.5rem; color: var(--text-primary);">
+              <div>📍 <strong>Dispatch Base:</strong> Kampala, Uganda</div>
+              <div>🕒 <strong>Hours:</strong> Mon – Sat 07:30 – 18:00</div>
+              <div>💳 <strong>Payment:</strong> Mobile Money (MTN & Airtel), Bank Transfer, or Cash on delivery</div>
+            </div>
+          </div>
+
+          <div class="tech-block" style="background-color: var(--bg-surface-elevated);">
+            <h3 style="margin-bottom: 0.5rem;">Need an Immediate Reply?</h3>
+            <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              For urgent or same-day vehicle cleaning queries, chat with our coordinator on WhatsApp:
+            </p>
+            <button type="button" class="btn btn-sm btn-whatsapp btn-whatsapp-action" data-topic="Urgent Enquiries" style="width: 100%;">
+              <span>💬 Direct WhatsApp Message</span>
+            </button>
+          </div>
+
+          <div class="tech-block">
+            <h4 style="font-size: 0.85rem; color: var(--text-white); margin-bottom: 0.5rem;">Owner / Contact Configuration</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+              Set the live WhatsApp number for this session or learn how to edit <code style="color: var(--mist-blue);">assets/js/config.js</code>.
+            </p>
+            <button type="button" class="btn btn-sm btn-secondary btn-open-config" style="width: 100%;">
+              ⚙️ Manage Contact Settings
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking Submission Modal -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h3 id="bookingModalTitle" style="font-size: 1.15rem; color: var(--text-white);">Booking Request Prepared</h3>
+          <p style="font-size: 0.78rem; color: var(--text-muted);">Ready to send to Mist Wheels</p>
+        </div>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Config Notice if official number is pending -->
+      <div id="modalConfigNotice" style="display: none; background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: var(--radius-sm); padding: 0.85rem; font-size: 0.78rem; color: #fde68a; margin-bottom: 1rem;">
+        <strong>Configuration Notice:</strong> The official WhatsApp Business phone number is currently pending in <code style="color: #fbbf24; font-family: monospace;">assets/js/config.js</code>. You can copy the prepared text below or configure your number in the settings assistant.
+      </div>
+
+      <div style="margin-bottom: 1rem;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.35rem;">
+          <span>FORMATTED MESSAGE</span>
+          <span>British English</span>
+        </div>
+        <pre id="modalMessagePreview" style="background-color: var(--bg-dark); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1rem; font-family: monospace; font-size: 0.75rem; color: var(--text-primary); white-space: pre-wrap; max-height: 200px; overflow-y: auto;"></pre>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a id="modalOpenWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="flex: 1;">
+          <span>💬 Open in WhatsApp</span>
+        </a>
+        <button type="button" id="modalCopyBtn" class="btn btn-secondary" style="flex: 1;">
+          <span>📋 Copy Message</span>
+        </button>
+      </div>
+
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">
+        Our operations dispatch will confirm your slot and arrival window promptly.
+      </p>
+    </div>
+  </div>
+
+  <!-- Settings Assistant Modal -->
+  <div class="modal-overlay" id="configModal" role="dialog" aria-modal="true" aria-labelledby="cfgModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h3 id="cfgModalTitle" style="font-size: 1.15rem; color: var(--text-white);">Mist Wheels Contact Settings</h3>
+          <p style="font-size: 0.78rem; color: var(--text-muted);">Central configuration helper</p>
+        </div>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+        <p style="margin-bottom: 0.75rem;">
+          Contact details and business variables are controlled in:
+          <br><code style="background-color: var(--bg-dark); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--mist-blue); font-family: monospace;">assets/js/config.js</code>
+        </p>
+        <p style="margin-bottom: 0.75rem;">
+          To test direct WhatsApp message transmission in your browser right now, enter an active phone number in international format (e.g. <strong style="color: var(--text-white);">256770000000</strong>):
+        </p>
+        <form id="sessionNumberForm" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+          <input type="text" id="sessionNumberInput" class="form-control" placeholder="256..." style="font-family: monospace;">
+          <button type="submit" class="btn btn-sm btn-primary">Apply</button>
+        </form>
+      </div>
+      <button type="button" class="btn btn-sm btn-secondary modal-close-btn" style="width: 100%;">Close Settings</button>
+    </div>
+  </div>
+
+  <!-- Floating Sticky WhatsApp Button (Mobile) -->
+  <aside aria-label="Floating WhatsApp Contact">
+    <button type="button" class="floating-whatsapp btn-whatsapp-action" data-topic="Contact Page Floating" aria-label="Book on WhatsApp">
+      <span>💬</span>
+      <span>WhatsApp Booking</span>
+    </button>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+          <img src="assets/images/logo.svg" alt="Mist Wheels Logo" width="170" height="38">
+        </a>
+        <p style="font-size: 0.8rem; line-height: 1.6; margin-bottom: 1rem;">
+          Mist Wheels brings mobile exterior washes, interior steam cleaning & extraction, and scheduled fleet care across Kampala and Greater Kampala.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--text-secondary);">
+          📍 Mobile Dispatch Hub, Kampala, Uganda<br>
+          🕒 Mon – Sat: 07:30 – 18:00
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#maintenance-wash">Maintenance Wash</a></li>
+          <li><a href="services.html#interior-clean">Interior Steam & Extraction</a></li>
+          <li><a href="services.html#full-detail">Full Vehicle Detail</a></li>
+          <li><a href="fleet.html">Scheduled Fleet Cleaning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Mist Wheels</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact & Book</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Booking Notice</h4>
+        <p style="font-size: 0.78rem; margin-bottom: 0.75rem;">
+          All booking submissions are subject to schedule and location confirmation.
+        </p>
+        <button type="button" class="btn btn-sm btn-secondary btn-open-config" style="width: 100%;">
+          ⚙️ Contact Configuration
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 Mist Wheels. All rights reserved. Registered in Uganda.</div>
+      <div>Notice: All bookings are subject to schedule and location confirmation.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
