@@ -97,10 +97,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const matches = allAreas.filter(item => item.suburb.toLowerCase().includes(query));
 
       if (matches.length > 0) {
-        let html = `<div style="font-size: 0.75rem; color: #38bdf8; font-weight: 700; margin-bottom: 0.5rem;">✓ Serviced in our active launch perimeter:</div>`;
+        let html = `<div style="font-size: 0.75rem; color: #0284c7; font-weight: 700; margin-bottom: 0.5rem;"><svg class="flat-icon flat-icon-green" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Serviced in our active launch perimeter:</div>`;
         html += `<div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">`;
         matches.forEach(item => {
-          html += `<a href="contact.html?neighbourhood=${encodeURIComponent(item.suburb)}" class="suburb-pill" style="color: #f1f5f9; border-color: #38bdf8; text-decoration: none;">📍 ${item.suburb} (${item.tag})</a>`;
+          html += `<a href="contact.html?neighbourhood=${encodeURIComponent(item.suburb)}" class="suburb-pill" style="color: #0f172a; border-color: #0284c7; text-decoration: none;"><svg class="flat-icon flat-icon-accent" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ${item.suburb} (${item.tag})</a>`;
         });
         html += `</div>`;
         suburbResults.innerHTML = html;
@@ -355,8 +355,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (preview) {
         navigator.clipboard.writeText(preview.textContent).then(() => {
           const original = copyBtn.innerHTML;
-          copyBtn.innerHTML = `✓ Copied to Clipboard!`;
-          copyBtn.style.color = "#22c55e";
+          copyBtn.innerHTML = `<svg class="flat-icon flat-icon-green" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Copied to Clipboard!</span>`;
+          copyBtn.style.color = "#16a34a";
           setTimeout(() => {
             copyBtn.innerHTML = original;
             copyBtn.style.color = "";
